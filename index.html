@@ -1,73 +1,50 @@
+<!-- ========================= index.html ========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>TASTY & QUALITY | Noodles & Biryani Spot</title>
 
-    <meta name="theme-color" content="#050505">
-
-    <meta name="description"
-          content="Tasty & Quality Noodles and Biryani Spot - Premium biryani, noodles and Chinese food in Gudur, Andhra Pradesh.">
-
-    <title>
-        TASTY & QUALITY | Noodles & Biryani Spot | Gudur
-    </title>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- =====================================================
-     CINEMATIC LOADING SCREEN
-===================================================== -->
+<!-- ================= LOADER ================= -->
 
-<div id="loader">
+<div class="loader" id="loader">
 
-    <div class="loader-content">
-
-        <div class="loader-logo">
-            T&Q
-        </div>
-
-        <div class="loader-line"></div>
-
-        <p>
-            TASTY & QUALITY
-        </p>
-
-        <span>
-            NOODLES AND BIRIYANI SPOT
-        </span>
-
+    <div class="loader-logo">
+        T&Q
     </div>
+
+    <div class="loader-line"></div>
+
+    <h3>TASTY & QUALITY</h3>
+
+    <p>NOODLES AND BIRIYANI SPOT</p>
 
 </div>
 
 
-<!-- =====================================================
-     NAVIGATION
-===================================================== -->
+<!-- ================= NAVBAR ================= -->
 
 <header class="navbar">
 
-    <a href="#home" class="brand">
+    <a href="#home" class="logo-area">
 
-        <div class="brand-logo">
+        <div class="logo">
             T&Q
         </div>
 
-        <div class="brand-text">
+        <div>
             <strong>TASTY & QUALITY</strong>
             <small>NOODLES AND BIRIYANI SPOT</small>
         </div>
@@ -77,11 +54,11 @@
 
     <nav>
 
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#story">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#menu">MENU</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#contact">CONTACT</a>
 
     </nav>
 
@@ -94,44 +71,90 @@
 
     </a>
 
+    <button class="mobile-button"
+            onclick="toggleMenu()">
 
-    <button class="menu-button" onclick="toggleMenu()">
         ☰
+
     </button>
 
 </header>
 
 
-<!-- =====================================================
-     MOBILE MENU
-===================================================== -->
+<!-- ================= MOBILE MENU ================= -->
 
 <div class="mobile-menu" id="mobileMenu">
 
-    <a href="#home" onclick="toggleMenu()">Home</a>
-    <a href="#menu" onclick="toggleMenu()">Menu</a>
-    <a href="#story" onclick="toggleMenu()">About</a>
-    <a href="#gallery" onclick="toggleMenu()">Gallery</a>
-    <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <a href="#home" onclick="toggleMenu()">HOME</a>
+    <a href="#about" onclick="toggleMenu()">ABOUT</a>
+    <a href="#menu" onclick="toggleMenu()">MENU</a>
+    <a href="#gallery" onclick="toggleMenu()">GALLERY</a>
+    <a href="#contact" onclick="toggleMenu()">CONTACT</a>
 
 </div>
 
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+<!-- ================= HERO ================= -->
 
 <section id="home" class="hero">
 
-    <div class="hero-overlay"></div>
+    <div class="hero-bg"></div>
 
-    <div class="gold-particles"></div>
+    <div class="hero-glow"></div>
 
+
+    <!-- CSS GENERATED BIRYANI -->
+
+    <div class="hero-food">
+
+        <div class="steam steam1"></div>
+        <div class="steam steam2"></div>
+        <div class="steam steam3"></div>
+
+        <div class="bowl-shadow"></div>
+
+        <div class="biryani-bowl">
+
+            <div class="rice">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <div class="chicken chicken1"></div>
+            <div class="chicken chicken2"></div>
+            <div class="chicken chicken3"></div>
+
+            <div class="onion onion1"></div>
+            <div class="onion onion2"></div>
+
+            <div class="mint mint1"></div>
+            <div class="mint mint2"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO TEXT -->
 
     <div class="hero-content">
 
-        <div class="hero-small">
+        <div class="eyebrow">
+
             ✦ GUDUR'S FLAVOUR DESTINATION ✦
+
         </div>
 
 
@@ -147,13 +170,13 @@
         <h2>
 
             NOODLES AND
-            <strong>BIRIYANI</strong>
+            <b>BIRIYANI</b>
             SPOT
 
         </h2>
 
 
-        <p class="hero-description">
+        <p>
 
             Where authentic flavour meets
             unforgettable taste.
@@ -164,16 +187,15 @@
         <div class="hero-buttons">
 
             <a href="#menu"
-               class="btn btn-gold">
+               class="gold-button">
 
                 EXPLORE MENU
 
             </a>
 
-
             <a href="https://www.swiggy.com/city/gudur/tasty-and-quality-noodles-and-biryani-spot-gudur-rest1104985"
                target="_blank"
-               class="btn btn-outline">
+               class="outline-button">
 
                 ORDER ONLINE
 
@@ -184,119 +206,114 @@
     </div>
 
 
-    <!-- HERO FOOD -->
+    <div class="scroll">
 
-    <div class="hero-food">
+        SCROLL TO DISCOVER
 
-        <div class="food-glow"></div>
-
-        <img src="assets/hero-biryani.jpg"
-             alt="Premium Biryani">
-
-    </div>
-
-
-    <div class="scroll-down">
-
-        <span>SCROLL TO DISCOVER</span>
-
-        <div>↓</div>
+        <span>↓</span>
 
     </div>
 
 </section>
 
 
+<!-- ================= STRIP ================= -->
 
-<!-- =====================================================
-     BRAND STRIP
-===================================================== -->
+<section class="strip">
 
-<section class="brand-strip">
+    <span>AUTHENTIC FLAVOUR</span>
+    <b>✦</b>
 
-    <div>AUTHENTIC FLAVOUR</div>
-    <span>✦</span>
+    <span>FRESH INGREDIENTS</span>
+    <b>✦</b>
 
-    <div>FRESH INGREDIENTS</div>
-    <span>✦</span>
+    <span>PREMIUM TASTE</span>
+    <b>✦</b>
 
-    <div>MADE WITH PASSION</div>
-    <span>✦</span>
-
-    <div>GUDUR</div>
+    <span>GUDUR</span>
 
 </section>
 
 
+<!-- ================= ABOUT ================= -->
 
-<!-- =====================================================
-     ABOUT
-===================================================== -->
+<section class="section about"
+         id="about">
 
-<section id="story" class="story section">
+    <div class="about-image">
 
-    <div class="section-label">
-        OUR STORY
-    </div>
+        <!-- GENERATED FOOD VISUAL -->
 
+        <div class="food-poster">
 
-    <div class="story-grid">
+            <div class="poster-steam"></div>
 
-        <div class="story-image">
+            <div class="poster-bowl">
 
-            <img src="assets/restaurant.jpg"
-                 alt="Tasty and Quality Restaurant">
+                <div class="poster-rice"></div>
+
+                <div class="poster-chicken"></div>
+                <div class="poster-chicken second"></div>
+                <div class="poster-chicken third"></div>
+
+            </div>
 
         </div>
 
-
-        <div class="story-content">
-
-            <p class="gold-text">
-                TASTE THAT SPEAKS
-            </p>
-
-            <h2>
-                SIMPLE FOOD.
-                <br>
-                <span>POWERFUL FLAVOUR.</span>
-            </h2>
-
-            <p>
-
-                Welcome to
-                <strong>Tasty & Quality Noodles and Biryani Spot</strong>,
-                a food destination in Gudur serving biryani,
-                noodles, fried rice and popular Chinese dishes.
-
-            </p>
-
-            <p>
-
-                From a satisfying plate of biryani to
-                freshly prepared noodles, every order is
-                made to deliver bold flavour and a memorable meal.
-
-            </p>
+    </div>
 
 
-            <div class="story-stats">
+    <div class="about-content">
 
-                <div>
-                    <strong>01</strong>
-                    <span>Signature Biryani</span>
-                </div>
+        <div class="label">
+            OUR STORY
+        </div>
 
-                <div>
-                    <strong>02</strong>
-                    <span>Fresh Noodles</span>
-                </div>
+        <h2>
 
-                <div>
-                    <strong>03</strong>
-                    <span>Gudur</span>
-                </div>
+            SIMPLE FOOD.
+            <br>
 
+            <span>POWERFUL FLAVOUR.</span>
+
+        </h2>
+
+
+        <p>
+
+            Welcome to
+            <strong>Tasty & Quality Noodles and Biryani Spot</strong>.
+
+            A food destination in Gudur bringing together
+            delicious biryani, noodles, fried rice and
+            popular starters.
+
+        </p>
+
+
+        <p>
+
+            Every dish is created to deliver the kind of
+            flavour that makes you want another bite.
+
+        </p>
+
+
+        <div class="stats">
+
+            <div>
+                <strong>01</strong>
+                <small>SIGNATURE BIRIYANI</small>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <small>FRESH NOODLES</small>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <small>GUDUR</small>
             </div>
 
         </div>
@@ -306,118 +323,140 @@
 </section>
 
 
-
-<!-- =====================================================
-     SIGNATURE DISH
-===================================================== -->
+<!-- ================= SIGNATURE ================= -->
 
 <section class="signature">
 
-    <div class="signature-bg"></div>
+    <div class="signature-overlay"></div>
+
 
     <div class="signature-content">
 
-        <div class="section-label">
+        <div class="label">
             SIGNATURE EXPERIENCE
         </div>
 
         <h2>
+
             THE
             <span>BIRIYANI</span>
             MOMENT
+
         </h2>
 
         <p>
 
-            Fragrant rice. Rich spices.
+            Fragrant rice.
+            Rich spices.
             Tender chicken.
-            That first bite says everything.
+            One unforgettable plate.
 
         </p>
 
-        <a href="#menu"
-           class="btn btn-gold">
 
-            VIEW BIRIYANI MENU
+        <a href="#menu"
+           class="gold-button">
+
+            VIEW MENU
 
         </a>
 
     </div>
 
+
+    <div class="large-biryani">
+
+        <div class="large-steam"></div>
+
+        <div class="large-bowl">
+
+            <div class="large-rice"></div>
+
+            <div class="large-chicken a"></div>
+            <div class="large-chicken b"></div>
+            <div class="large-chicken c"></div>
+
+            <div class="large-onion"></div>
+
+        </div>
+
+    </div>
+
 </section>
 
 
+<!-- ================= MENU ================= -->
 
-<!-- =====================================================
-     MENU
-===================================================== -->
+<section class="section menu"
+         id="menu">
 
-<section id="menu" class="menu section">
+    <div class="heading">
 
-    <div class="section-heading">
-
-        <div class="section-label">
+        <div class="label">
             OUR MENU
         </div>
 
         <h2>
+
             FLAVOURS WORTH
             <span>COMING BACK FOR</span>
+
         </h2>
 
         <p>
-            Selected dishes currently listed through
-            the restaurant's online ordering menu.
+            Our popular dishes.
         </p>
 
     </div>
 
 
-    <!-- MENU FILTER -->
-
-    <div class="menu-filter">
+    <div class="filters">
 
         <button class="filter active"
-                data-category="all">
+                data-filter="all">
+
             ALL
+
         </button>
 
         <button class="filter"
-                data-category="biryani">
+                data-filter="biryani">
+
             BIRIYANI
+
         </button>
 
         <button class="filter"
-                data-category="noodles">
+                data-filter="noodles">
+
             NOODLES
+
         </button>
 
         <button class="filter"
-                data-category="rice">
+                data-filter="rice">
+
             FRIED RICE
+
         </button>
 
         <button class="filter"
-                data-category="starters">
+                data-filter="starters">
+
             STARTERS
+
         </button>
 
     </div>
 
 
-    <!-- MENU GRID -->
-
     <div class="menu-grid">
 
 
-        <!-- BIRYANI -->
+        <div class="menu-card"
+             data-category="biryani">
 
-        <article class="menu-card"
-                 data-category="biryani">
-
-            <div class="menu-number">
-                01
-            </div>
+            <small>01</small>
 
             <h3>
                 Chicken Dum Biriyani
@@ -431,15 +470,13 @@
                 ₹249
             </strong>
 
-        </article>
+        </div>
 
 
-        <article class="menu-card"
-                 data-category="biryani">
+        <div class="menu-card"
+             data-category="biryani">
 
-            <div class="menu-number">
-                02
-            </div>
+            <small>02</small>
 
             <h3>
                 Chicken Dum Biriyani
@@ -453,15 +490,13 @@
                 ₹299
             </strong>
 
-        </article>
+        </div>
 
 
-        <article class="menu-card"
-                 data-category="biryani">
+        <div class="menu-card"
+             data-category="biryani">
 
-            <div class="menu-number">
-                03
-            </div>
+            <small>03</small>
 
             <h3>
                 Chicken Dum Biriyani
@@ -475,173 +510,73 @@
                 ₹599
             </strong>
 
-        </article>
+        </div>
 
 
-        <article class="menu-card"
-                 data-category="biryani">
+        <div class="menu-card"
+             data-category="noodles">
 
-            <div class="menu-number">
-                04
-            </div>
-
-            <h3>
-                Chicken Dum Biriyani
-            </h3>
-
-            <p>
-                PACK OF 3
-            </p>
-
-            <strong>
-                ₹999
-            </strong>
-
-        </article>
-
-
-        <!-- NOODLES -->
-
-        <article class="menu-card"
-                 data-category="noodles">
-
-            <div class="menu-number">
-                05
-            </div>
+            <small>04</small>
 
             <h3>
                 Veg Noodles
             </h3>
 
             <p>
-                Classic vegetable noodles
+                Fresh vegetable noodles
             </p>
 
             <strong>
                 ₹159
             </strong>
 
-        </article>
+        </div>
 
 
-        <article class="menu-card"
-                 data-category="noodles">
+        <div class="menu-card"
+             data-category="noodles">
 
-            <div class="menu-number">
-                06
-            </div>
+            <small>05</small>
 
             <h3>
                 Egg Noodles
             </h3>
 
             <p>
-                Classic egg noodles
+                Fresh egg noodles
             </p>
 
             <strong>
                 ₹169
             </strong>
 
-        </article>
+        </div>
 
 
-        <article class="menu-card"
-                 data-category="noodles">
+        <div class="menu-card"
+             data-category="noodles">
 
-            <div class="menu-number">
-                07
-            </div>
+            <small>06</small>
 
             <h3>
                 Chicken Noodles
             </h3>
 
             <p>
-                Fresh boneless chicken
+                Chicken noodles
             </p>
 
             <strong>
                 ₹189
             </strong>
 
-        </article>
+        </div>
 
 
-        <article class="menu-card"
-                 data-category="noodles">
+        <div class="menu-card"
+             data-category="rice">
 
-            <div class="menu-number">
-                08
-            </div>
-
-            <h3>
-                Gobi Noodles
-            </h3>
-
-            <p>
-                Fresh noodles & cauliflower
-            </p>
-
-            <strong>
-                ₹159
-            </strong>
-
-        </article>
-
-
-        <article class="menu-card"
-                 data-category="noodles">
-
-            <div class="menu-number">
-                09
-            </div>
-
-            <h3>
-                Gobi Egg Noodles
-            </h3>
-
-            <p>
-                Fresh cauliflower & egg
-            </p>
-
-            <strong>
-                ₹169
-            </strong>
-
-        </article>
-
-
-        <article class="menu-card"
-                 data-category="noodles">
-
-            <div class="menu-number">
-                10
-            </div>
-
-            <h3>
-                Chicken Noodles
-            </h3>
-
-            <p>
-                450 ML
-            </p>
-
-            <strong>
-                ₹149
-            </strong>
-
-        </article>
-
-
-        <!-- FRIED RICE -->
-
-        <article class="menu-card"
-                 data-category="rice">
-
-            <div class="menu-number">
-                11
-            </div>
+            <small>07</small>
 
             <h3>
                 Veg Fried Rice
@@ -655,15 +590,13 @@
                 ₹129
             </strong>
 
-        </article>
+        </div>
 
 
-        <article class="menu-card"
-                 data-category="rice">
+        <div class="menu-card"
+             data-category="rice">
 
-            <div class="menu-number">
-                12
-            </div>
+            <small>08</small>
 
             <h3>
                 Gobi Fried Rice
@@ -677,15 +610,13 @@
                 ₹159
             </strong>
 
-        </article>
+        </div>
 
 
-        <article class="menu-card"
-                 data-category="rice">
+        <div class="menu-card"
+             data-category="rice">
 
-            <div class="menu-number">
-                13
-            </div>
+            <small>09</small>
 
             <h3>
                 Chicken Fried Rice
@@ -699,40 +630,16 @@
                 ₹189
             </strong>
 
-        </article>
+        </div>
 
 
-        <article class="menu-card"
-                 data-category="rice">
+        <div class="menu-card"
+             data-category="starters">
 
-            <div class="menu-number">
-                14
-            </div>
+            <small>10</small>
 
             <h3>
-                Double Egg Fried Rice
-            </h3>
-
-            <p>
-                Basmati
-            </p>
-
-            <strong>
-                ₹159
-            </strong>
-
-        </article>
-
-
-        <article class="menu-card"
-                 data-category="rice">
-
-            <div class="menu-number">
-                15
-            </div>
-
-            <h3>
-                Pepper Spl Fried Rice
+                Veg Manchurian
             </h3>
 
             <p>
@@ -740,108 +647,36 @@
             </p>
 
             <strong>
-                ₹169
-            </strong>
-
-        </article>
-
-
-        <article class="menu-card"
-                 data-category="rice">
-
-            <div class="menu-number">
-                16
-            </div>
-
-            <h3>
-                Triple Egg Chicken Rice
-            </h3>
-
-            <p>
-                Chicken & triple egg
-            </p>
-
-            <strong>
-                ₹219
-            </strong>
-
-        </article>
-
-
-        <!-- STARTERS -->
-
-        <article class="menu-card"
-                 data-category="starters">
-
-            <div class="menu-number">
-                17
-            </div>
-
-            <h3>
-                Veg Manchurian
-            </h3>
-
-            <p>
-                Bestseller
-            </p>
-
-            <strong>
                 ₹139
             </strong>
 
-        </article>
+        </div>
 
 
-        <article class="menu-card"
-                 data-category="starters">
+        <div class="menu-card"
+             data-category="starters">
 
-            <div class="menu-number">
-                18
-            </div>
+            <small>11</small>
 
             <h3>
                 Chicken Manchurian
             </h3>
 
             <p>
-                Fresh tender chicken
+                Tender chicken
             </p>
 
             <strong>
                 ₹249
             </strong>
 
-        </article>
+        </div>
 
 
-        <article class="menu-card"
-                 data-category="starters">
+        <div class="menu-card"
+             data-category="starters">
 
-            <div class="menu-number">
-                19
-            </div>
-
-            <h3>
-                Gobi Manchurian
-            </h3>
-
-            <p>
-                Fresh cauliflower
-            </p>
-
-            <strong>
-                ₹139
-            </strong>
-
-        </article>
-
-
-        <article class="menu-card"
-                 data-category="starters">
-
-            <div class="menu-number">
-                20
-            </div>
+            <small>12</small>
 
             <h3>
                 Chicken Pakoda
@@ -855,111 +690,67 @@
                 ₹149
             </strong>
 
-        </article>
-
-
-        <article class="menu-card"
-                 data-category="rice">
-
-            <div class="menu-number">
-                21
-            </div>
-
-            <h3>
-                Basmati Biryani Rice
-            </h3>
-
-            <p>
-                Only rice
-            </p>
-
-            <strong>
-                ₹99
-            </strong>
-
-        </article>
-
-
-    </div>
-
-
-    <div class="menu-note">
-
-        *Online menu prices may change.
-        Please check the ordering platform for the latest price and availability.
+        </div>
 
     </div>
 
 </section>
 
 
+<!-- ================= ORDER ================= -->
 
-<!-- =====================================================
-     ONLINE ORDERING
-===================================================== -->
+<section class="order-section">
 
-<section class="ordering">
-
-    <div class="section-label">
+    <div class="label">
         ORDER YOUR FAVOURITES
     </div>
 
     <h2>
+
         HUNGRY?
         <span>LET'S FIX THAT.</span>
+
     </h2>
 
-    <p>
-        Choose your favourite way to order.
-    </p>
+
+    <div class="order-grid">
 
 
-    <div class="order-buttons">
+        <a class="order-card"
+           href="https://www.swiggy.com/city/gudur/tasty-and-quality-noodles-and-biryani-spot-gudur-rest1104985"
+           target="_blank">
 
-        <a href="https://www.swiggy.com/city/gudur/tasty-and-quality-noodles-and-biryani-spot-gudur-rest1104985"
-           target="_blank"
-           class="order-card swiggy">
-
-            <span>ORDER ON</span>
+            <small>ORDER ON</small>
 
             <strong>SWIGGY</strong>
 
-            <small>
-                Browse Menu →
-            </small>
+            <span>Browse Menu →</span>
 
         </a>
 
 
-        <!-- Replace this with the direct Zomato restaurant URL
-             when you have it -->
+        <a class="order-card zomato"
+           href="https://www.zomato.com/"
+           target="_blank">
 
-        <a href="https://www.zomato.com/"
-           target="_blank"
-           class="order-card zomato">
-
-            <span>ORDER ON</span>
+            <small>ORDER ON</small>
 
             <strong>ZOMATO</strong>
 
-            <small>
-                Browse Menu →
-            </small>
+            <span>Browse Menu →</span>
 
         </a>
 
 
-        <a href="https://wa.me/919393632393?text=Hello%20Tasty%20%26%20Quality%20Noodles%20and%20Biryani%20Spot%2C%20I%20would%20like%20to%20place%20an%20order."
-           target="_blank"
-           class="order-card whatsapp">
+        <a class="order-card whatsapp"
+           href="https://wa.me/919393632393?text=Hello%20Tasty%20%26%20Quality%20Noodles%20and%20Biryani%20Spot%2C%20I%20would%20like%20to%20place%20an%20order."
+           target="_blank">
 
-            <span>ORDER THROUGH</span>
+            <small>ORDER THROUGH</small>
 
             <strong>WHATSAPP</strong>
 
-            <small>
-                Chat with us →
-            </small>
+            <span>Chat with us →</span>
 
         </a>
 
@@ -968,22 +759,22 @@
 </section>
 
 
+<!-- ================= GALLERY ================= -->
 
-<!-- =====================================================
-     GALLERY
-===================================================== -->
+<section class="section gallery"
+         id="gallery">
 
-<section id="gallery" class="gallery section">
+    <div class="heading">
 
-    <div class="section-heading">
-
-        <div class="section-label">
-            FOOD & EXPERIENCE
+        <div class="label">
+            FOOD EXPERIENCE
         </div>
 
         <h2>
+
             MADE FOR
             <span>FOOD LOVERS</span>
+
         </h2>
 
     </div>
@@ -991,38 +782,59 @@
 
     <div class="gallery-grid">
 
-        <div class="gallery-item large">
 
-            <img src="assets/biryani-1.jpg"
-                 alt="Chicken Biryani">
+        <div class="gallery-box big">
 
-            <div class="gallery-caption">
+            <div class="gallery-biryani">
+
+                <div class="gb-rice"></div>
+
+                <div class="gb-chicken one"></div>
+                <div class="gb-chicken two"></div>
+                <div class="gb-chicken three"></div>
+
+            </div>
+
+            <h3>
                 CHICKEN BIRIYANI
-            </div>
+            </h3>
 
         </div>
 
 
-        <div class="gallery-item">
+        <div class="gallery-box noodles-box">
 
-            <img src="assets/noodles.jpg"
-                 alt="Noodles">
+            <div class="fake-noodles">
 
-            <div class="gallery-caption">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <h3>
                 NOODLES
-            </div>
+            </h3>
 
         </div>
 
 
-        <div class="gallery-item">
+        <div class="gallery-box rice-box">
 
-            <img src="assets/restaurant.jpg"
-                 alt="Restaurant">
+            <div class="fake-rice">
 
-            <div class="gallery-caption">
-                TASTY & QUALITY
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
             </div>
+
+            <h3>
+                FRIED RICE
+            </h3>
 
         </div>
 
@@ -1031,82 +843,76 @@
 </section>
 
 
+<!-- ================= LOCATION ================= -->
 
-<!-- =====================================================
-     LOCATION
-===================================================== -->
+<section class="location"
+         id="contact">
 
-<section id="contact" class="location section">
+    <div class="location-info">
 
-    <div class="location-content">
-
-        <div class="section-label">
+        <div class="label">
             FIND US
         </div>
 
         <h2>
+
             COME.
             <span>EAT.</span>
             <br>
             ENJOY.
+
         </h2>
 
 
-        <div class="contact-details">
+        <div class="contact-item">
 
-            <div class="contact-item">
+            <small>ADDRESS</small>
 
-                <span>ADDRESS</span>
-
-                <strong>
-                    Ashok Nagar,
-                    Gudur,
-                    Andhra Pradesh
-                    524101
-                </strong>
-
-            </div>
-
-
-            <div class="contact-item">
-
-                <span>PHONE</span>
-
-                <a href="tel:+919393632393">
-
-                    +91 93936 32393
-
-                </a>
-
-            </div>
-
-
-            <div class="contact-item">
-
-                <span>HOURS</span>
-
-                <strong>
-                    Open until 11:00 PM
-                </strong>
-
-            </div>
+            <strong>
+                Ashok Nagar,
+                Gudur,
+                Andhra Pradesh 524101
+            </strong>
 
         </div>
 
 
-        <div class="location-buttons">
+        <div class="contact-item">
 
-            <a href="tel:+919393632393"
-               class="btn btn-gold">
+            <small>PHONE</small>
+
+            <a href="tel:+919393632393">
+
+                +91 93936 32393
+
+            </a>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <small>OPENING HOURS</small>
+
+            <strong>
+                Open until 11:00 PM
+            </strong>
+
+        </div>
+
+
+        <div class="contact-buttons">
+
+            <a class="gold-button"
+               href="tel:+919393632393">
 
                 CALL NOW
 
             </a>
 
-
-            <a href="https://wa.me/919393632393"
-               target="_blank"
-               class="btn btn-outline">
+            <a class="outline-button"
+               href="https://wa.me/919393632393"
+               target="_blank">
 
                 WHATSAPP
 
@@ -1117,55 +923,20 @@
     </div>
 
 
-    <!-- GOOGLE MAP -->
+    <!-- MAP -->
 
-    <div class="map-container">
+    <div class="map">
 
         <iframe
             src="https://www.google.com/maps?q=5R4X%2BMC%20Gudur%2C%20Andhra%20Pradesh&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen>
+            loading="lazy">
         </iframe>
 
-        <a
-            class="map-open"
-            href="https://www.google.com/maps/search/?api=1&query=5R4X%2BMC%20Gudur%2C%20Andhra%20Pradesh"
-            target="_blank">
 
-            OPEN IN GOOGLE MAPS →
+        <a href="https://www.google.com/maps/search/?api=1&query=5R4X%2BMC%20Gudur%2C%20Andhra%20Pradesh"
+           target="_blank">
 
-        </a>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FINAL CTA
-===================================================== -->
-
-<section class="final-cta">
-
-    <div class="final-content">
-
-        <p>
-            ONE BITE.
-        </p>
-
-        <h2>
-            ONE
-            <span>MORE</span>
-            CRAVING.
-        </h2>
-
-        <a href="https://www.swiggy.com/city/gudur/tasty-and-quality-noodles-and-biryani-spot-gudur-rest1104985"
-           target="_blank"
-           class="btn btn-gold">
-
-            ORDER NOW
+            OPEN GOOGLE MAPS →
 
         </a>
 
@@ -1174,45 +945,67 @@
 </section>
 
 
+<!-- ================= FINAL CTA ================= -->
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
+<section class="final">
+
+    <div class="label">
+        ONE BITE.
+    </div>
+
+    <h2>
+
+        ONE
+        <span>MORE</span>
+        CRAVING.
+
+    </h2>
+
+
+    <a href="https://www.swiggy.com/city/gudur/tasty-and-quality-noodles-and-biryani-spot-gudur-rest1104985"
+       target="_blank"
+       class="gold-button">
+
+        ORDER NOW
+
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-    <div class="footer-brand">
-
-        <div class="brand-logo">
-            T&Q
-        </div>
-
-        <h3>
-            TASTY & QUALITY
-        </h3>
-
-        <p>
-            NOODLES AND BIRIYANI SPOT
-        </p>
-
+    <div class="footer-logo">
+        T&Q
     </div>
+
+    <h3>
+        TASTY & QUALITY
+    </h3>
+
+    <p>
+        NOODLES AND BIRIYANI SPOT
+    </p>
 
 
     <div class="footer-links">
 
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#story">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#menu">MENU</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#contact">CONTACT</a>
 
     </div>
 
 
-    <div class="footer-credit">
+    <div class="designer">
 
-        <span>
+        <small>
             WEBSITE DESIGNED BY
-        </span>
+        </small>
 
         <strong>
             RAHULCHAKRI KASUKURTHI
@@ -1223,29 +1016,21 @@
 
     <div class="copyright">
 
-        © 2026 Tasty & Quality Noodles and Biryani Spot.
-        All Rights Reserved.
+        © 2026 TASTY & QUALITY NOODLES AND BIRIYANI SPOT
 
     </div>
 
 </footer>
 
 
-
-<!-- FLOATING WHATSAPP -->
-
-<a
-    class="floating-whatsapp"
-    href="https://wa.me/919393632393?text=Hello%20Tasty%20%26%20Quality%20Noodles%20and%20Biryani%20Spot"
-    target="_blank"
-    aria-label="WhatsApp">
+<a class="floating-whatsapp"
+   href="https://wa.me/919393632393"
+   target="_blank">
 
     WA
 
 </a>
 
-
-<!-- JAVASCRIPT -->
 
 <script src="script.js"></script>
 
